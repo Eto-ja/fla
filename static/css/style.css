@@ -13,16 +13,38 @@ q2 {
 }
 
 q3{
-    background-color: rgba(173, 223, 173, 0.7) !important;
+    background-color: #d3d3d3;
     font-size = 5;
 }
 
 q4{
-    background-color: rgba(173, 223, 173, 0.7);
+    background-color: #f1d273;
     font-size = 5;
 }
 
 q5{
-    background-color: rgba(173, 223, 173, 0.7);
+    background-color: #f88279;
     font-size = 5;
+}
+
+form.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    background-color: #ffd7b9;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h3 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 280px;
+}
+
+h5 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 230px;
 }

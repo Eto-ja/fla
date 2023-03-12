@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>{{ prof }}</title>
+    </head>
+    <body>
+        <h1>Миссия Колонизация Марса</h1>
+        <h4>И на Марсе будут яблони цвести!</h4>
+        {% if 'инженер'.lower() in prof %}
+            <h2>Инженерные тренажёры</h2>
+        {% else %}
+            <h2>Научные стимуляторы</h2>
+        {% endif %}
+    </body>
+</html>
