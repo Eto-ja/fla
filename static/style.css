@@ -48,3 +48,13 @@ h5 {
     margin-right: auto;
     max-width: 230px;
 }
+
+
+body{
+    background-color: red;
+}
+
+form{
+    padding: 50%;
+    margin: 0 auto 20px;
+}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Adding job</h1>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.job_title.label(class="position-center") }}<br>
+            {{ form.job_title(class="form-control", type="str") }}<br>
+        </p>
+        <p>
+            {{ form.team.label }}<br>
+            {{ form.team(class="form-control", type="str") }}<br>
+        </p>
+        <p>
+            {{ form.work_size.label }}<br>
+            {{ form.work_size(class="form-control", type="str") }}<br>
+        </p>
+        <p>
+            {{ form.collaborators.label }}<br>
+            {{ form.collaborators(class="form-control", type="str") }}<br>
+        </p>
+        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+        <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+        <div>{{ message }}</div>
+        {% if current_user.is_authenticated %}
+            <a class="navbar-brand" href="/logout">{{ current_user.name }}</a>
+        {% else %}
+{% endif %}
+    </form>
+{% endblock %}
